@@ -9,3 +9,27 @@ body{
     font-family: 'Orbitron', sans-serif;
     color: white;
 }
+/* Define o espaçamento entre as seções */
+.section {
+    padding: 80px 20px; /* Espaçamento interno */
+    margin: 0 auto; /* Centraliza as seções */
+    max-width: 1200px; /* Limita a largura das seções */
+  }
+  
+  /* Define uma altura mínima para uniformizar as seções */
+  .section:not(.vh-100) {
+    min-height: 70vh; /* As outras seções terão 70% da altura da tela */
+  }
+  
+  /* Efeitos de animação */
+  .reveal-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

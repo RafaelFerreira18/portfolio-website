@@ -4,19 +4,69 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+        linear-gradient(
+        to bottom, 
+        orangered, 
+        black
+        ) 1 100%;
+    padding: 50px;
 }
 
-.about-card img{
+.profile-pic{
     border-radius: 50%;
     border: 2px solid orangered;
-    box-shadow: 0px 0px 5px 2px orangered;
+    box-shadow: 0px 0px 10px 1px rgb(121, 13, 194);;
     width: 200px;
 }
-.about-card-text-container p{
+
+.about-card-text-container h3{
     background: linear-gradient(to right, orangered , white);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-weight: bold
+    font-weight: bold;
+}
+
+.about-card-text-container p{
+    font-family: "Montserrat", serif;
+    font-size: 22px;
+}
+
+.about-card-text-socials{
+    font-family: "Montserrat", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.about-card-text-socials a{
+    color: white;
+    text-decoration: none;
+    background-color: orangedred;
+    font-size: 20px;
+}
+
+.socials-buttons{
+    display: flex;
+    background: linear-gradient(to right, orangered , rgb(121, 13, 194));
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 300ms ease-in-out;
+}
+
+.socials-buttons img{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.socials-buttons:hover{
+    transform: translateY(-5px);
+    filter: brightness(1.2);
 }
 

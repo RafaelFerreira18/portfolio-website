@@ -6,17 +6,22 @@ import { AppComponent } from './app.component';
 import { TitleComponent } from './components/title/title.component';
 import { GridProjectsComponent } from './components/grid-projects/grid-projects.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ScrollRevealDirective } from './directives/scroll-reveal.directive';
+import { TechStackComponent } from './components/tech-stack/tech-stack.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitleComponent,
     GridProjectsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ScrollRevealDirective,
+    TechStackComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
