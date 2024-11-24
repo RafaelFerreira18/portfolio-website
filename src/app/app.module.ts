@@ -9,6 +9,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScrollRevealDirective } from './directives/scroll-reveal.directive';
 import { TechStackComponent } from './components/tech-stack/tech-stack.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TechStackComponent } from './components/tech-stack/tech-stack.component
     GridProjectsComponent,
     AboutMeComponent,
     ScrollRevealDirective,
-    TechStackComponent
+    TechStackComponent,
+    ContactComponent
   ],
   imports: [
     AppRoutingModule,
