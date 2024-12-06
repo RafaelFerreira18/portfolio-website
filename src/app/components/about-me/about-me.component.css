@@ -1,6 +1,5 @@
 .about-card{
     color: white;
-    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,3 +68,85 @@
     filter: brightness(1.2);
 }
 
+@media screen and (max-width: 768px){
+    .about-card{
+        flex-direction: column;
+    }
+
+    .about-card p{
+        font-size: 1em;
+    }
+
+    .about-card-text-socials{
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    .about-card-text-container{
+        text-align: center;
+    }
+
+    .about-card-text-socials{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .about-card{
+        flex-direction: column;
+    }
+
+    .about-card img{
+        width: 150px;
+    }
+
+    .about-card p{
+        font-size: 0.75em;
+    }
+
+    .about-card-text-socials{
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    .about-card-text-socials a{
+        text-align: center;
+        font-size: 0.7em;
+    }
+    
+    .about-card-text-socials img{
+        width: 20px;
+    }
+
+    .about-card-text-container{
+        text-align: center;
+    }
+
+    .about-card-text-socials{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .about-card img{
+        width: 100px;
+    }
+    .about-card p{
+        font-size: 0.5em;
+    }
+    .about-card a{
+        font-size: 0.5em;
+    }
+
+    .about-card-text-socials a{
+        font-size: 0.5em;
+    }
+
+    .socials-buttons{
+        padding: 5px;
+    }
+
+    .about-card-text-socials img{
+        width: 20px;
+    }
+}

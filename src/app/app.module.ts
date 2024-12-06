@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScrollRevealDirective } from './directives/scroll-reveal.directive';
 import { TechStackComponent } from './components/tech-stack/tech-stack.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ContactComponent } from './components/contact/contact.component';
     AboutMeComponent,
     ScrollRevealDirective,
     TechStackComponent,
-    ContactComponent
+    ContactComponent,
+    HeaderComponent
   ],
   imports: [
     AppRoutingModule,

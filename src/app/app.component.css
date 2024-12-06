@@ -1,8 +1,29 @@
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: auto;
     overflow: visible;
+    padding: 0 10px;
+}
+
+.full-screen{
+    height: 100vh;
+}
+
+.full-screen-plus{
+    height: 150vh;
+}
+
+@media screen and (max-width: 768px){
+    .full-screen-plus{
+        height: 300vh;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .full-screen-plus{
+        height: 400vh;
+    }
+    
 }

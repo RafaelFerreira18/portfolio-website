@@ -1,0 +1,21 @@
+.header{
+    margin: 15px;
+    font-size: 1.5rem;
+    color: tomato;
+}
+
+.header li a{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        font-size: 1.2rem;
+    }
+
+    .header li a{
+        font-size: 0.8rem;
+    }
+}

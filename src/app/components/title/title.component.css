@@ -5,3 +5,23 @@ h1{
 h3{
     font-size: 2em;
 }
+
+@media screen and (max-width: 768px){
+    .title-container h1{
+        font-size: 3em;
+    }
+
+    .title-container h3{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .title-container h1{
+        font-size: 2em;
+    }
+
+    .title-container h3{
+        font-size: 1em;
+    }
+}

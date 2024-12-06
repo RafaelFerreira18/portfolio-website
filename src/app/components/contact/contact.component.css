@@ -1,3 +1,71 @@
 .contact-container{
-    
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+        linear-gradient(
+        to bottom, 
+        orangered, 
+        black
+        ) 1 100%;
+    padding: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.contact-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-links a{
+    text-decoration: none;
+    margin: 0.5rem 0;
+    transition: all 300ms ease-in-out;
+    font-size: 1.5rem;
+    font-family: "Montserrat", serif;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+.contact-links a:hover{
+    transform: scale(1.05);
+    filter: brightness(1.5);
+}
+
+.contact-links a i{
+    margin-right: 0.5rem;
+    color: rgb(121, 13, 194);
+}
+
+h1{
+    background: linear-gradient(to right, orangered , white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@media screen and (max-width: 768px){
+    .contact-container{
+        padding: 20px;
+    }
+
+    .contact-container h1{
+        font-size: 2em;
+    }
+
+    .contact-links a{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .contact-container{
+        padding: 20px;
+    }
+
+    .contact-container h1{
+        font-size: 2em;
+    }
+
+    .contact-links a{
+        font-size: 1rem;
+    }
 }

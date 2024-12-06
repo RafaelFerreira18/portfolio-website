@@ -38,26 +38,24 @@ img{
     height: 282px;
 }
 
-.card {
+.grid-container .card {
     color: white;
     background-color: rgba(121, 13, 194, 0.1);
     min-height: 550px;
     position: relative;
     display: flex;
     flex-direction: column;
+    transition: all 300ms ease-in-out;
 }
 
-.card-body {
+.grid-container .card-body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-.card-btn {
-    position: absolute;
-    bottom: 10px;
-    left: 15%;
-    transform: translateX(-50%);
+.grid-container .card-btn {
     padding: 10px 20px;
     background-color: rgba(121, 13, 194, 0.8);
     color: white;
@@ -65,4 +63,53 @@ img{
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+    align-self: flex-start;
+}
+
+.grid-container .card-btn:last-of-type {
+    align-self: flex-start;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 768px){
+    .grid-container{
+        width: 100%;
+    }
+
+    .grid-container .card{
+        min-height: 400px;
+        width: 75%;
+        margin-left: 100px;
+    }
+
+    .grid-container .card-btn{
+        left: 20%;
+    }
+    .grid-container img{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .grid-container{
+        width: 100%;
+    }
+
+    .grid-container .card{
+        min-height: 500px;
+        width: 75%;
+        margin-left: 50px;
+    }
+
+    .grid-container .card-btn{
+        left: 50%;
+    }
+
+    .grid-container img{
+        height: 150px;
+    }
+    
 }
