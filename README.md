@@ -27,7 +27,7 @@ O design do portfólio foi criado com uma paleta marcante composta por:
    git clone https://github.com/RafaelFerreira18/portfolio-website.git
 2. Navegue até o diretório do projeto:
    ```bash
-   cd seu-repositorio
+   cd portfolio-website
 3. Instale as dependências:
    ```bash
    npm install
